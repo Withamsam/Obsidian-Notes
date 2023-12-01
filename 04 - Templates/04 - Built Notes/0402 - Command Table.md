@@ -1,0 +1,2 @@
+| Switch | Description | Example | 
+| :------: | :-----------: | :-------: |
