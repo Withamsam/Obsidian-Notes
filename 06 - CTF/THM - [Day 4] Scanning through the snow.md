@@ -2,7 +2,7 @@
 creation date: December 12th 2022
 last modified date: December 12th 2022
 aliases: []
-tags: #🎌
+tags:
 ---
 
 Primary Categories: { Add link(s) [[]] back to related PRIMARY categories }

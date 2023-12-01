@@ -103,7 +103,6 @@ async function buildNote(title,struct) {
 	var metadata = await setMetadata(tag) + "\n";
 	var header = await tp.file.include("[[0401 - Struct_Gen_Header]]") + "\n";
 	var catHeader = await tp.file.include("[[0408 - Struct_Secondary_Category_Header]]") + "\n";
-	var searchTag = "Search Tag: #" + tag + "  \n\n";
 	var pageTitle = "# [[" + title + "]]  \n";
 	var body = await tp.file.include(struct) + "\n"
 	var resources = await tp.file.include("[[0402 - Struct_Gen_Resources]]") + "\n";
@@ -118,16 +117,16 @@ async function buildNote(title,struct) {
 		if (await ShouldLink(struct)) {
 			console.log("linking it");
 			// include header if the note should be linked
-			note = metadata + header + searchTag + pageTitle + body + resources + timestamps
+			note = metadata + header + pageTitle + body + resources + timestamps
 		} else {
 			console.log("not linking it for reasons");
 			// do not include header 
-			note = metadata + searchTag + pageTitle + body + resources + timestamps
+			note = metadata + pageTitle + body + resources + timestamps
 		}
 	} else {
 		console.log("the struct is a template");
 		// if template, include only its contents
-		note = catHeader + searchTag + pageTitle + body
+		note = catHeader + pageTitle + body
 	}
 }
 
@@ -136,18 +135,18 @@ async function buildNote(title,struct) {
 // element which will prefix all content files and permit dataview quering
 // Returns: String
 async function setMetadata(inTag) {
-	var metadata = "---\ncreation date: " + tp.file.creation_date('MMMM Do YYYY') + "\nlast modified date: " + tp.file.last_modified_date('MMMM Do YYYY') + "\naliases: []\ntags: #" + inTag + "\n---\n";
+	var metadata = "---\ncreation date: " + tp.file.creation_date("MMMM Do YYYY (hh:ss a)") + "\nlast modified date: " + tp.file.last_modified_date("MMMM Do YYYY (hh:ss a)") + "\naliases: []\ntags: " + inTag + "\n---\n";
 
 	return metadata;
 }
 
 // Name: setTimestamps
 // Description: Builds the timestamps element appended to note pages as they're built. Includes the definition of the Modified Date dynamic element which is updated when the page is edited and shown at the time of the page being rendered in preview mode.
-async function setTimestamps() {
-	var timestamps = "\nCreated Date: " + tp.file.creation_date('MMMM Do YYYY (hh:ss a)') + "  \nLast Modified Date: <%+tp.file.last_modified_date(\"MMMM Do YYYY (hh:ss a)\")%>";
-	
-	return timestamps;
-}
+//async function setTimestamps() {
+	//	var timestamps = "\nCreated Date: " + tp.file.creation_date('MMMM Do YYYY (hh:ss a)') + "  \nLast Modified Date: //<%+tp.file.last_modified_date(\"MMMM Do YYYY (hh:ss a)\")%>";
+//	
+//	return timestamps;
+//}
 
 // Name: isCategory
 // Description: Determines whether or not the struct is related to a category
