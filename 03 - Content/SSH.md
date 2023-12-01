@@ -1,8 +1,10 @@
 ---
 creation date: December 13th 2022
 last modified date: December 13th 2022
-aliases: []
-tags: #📕
+aliases: 
+tags:
+  - 📕
+primary categories:
 ---
 
 Primary Categories: { Add link(s) [[]] back to related PRIMARY categories }
