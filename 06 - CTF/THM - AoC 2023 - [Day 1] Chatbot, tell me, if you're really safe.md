@@ -1,15 +1,14 @@
 ---
-creation date: December 1st 2023
-last modified date: December 1st 2023
+creation date: December 1st 2023 (01:32 pm)
+last modified date: December 1st 2023 (01:32 pm)
 aliases: 
 tags:
+  - 🎌
 ---
-
+ 
 Primary Categories: 
 Secondary Categories:  
 Links: 
-Search Tag: #🎌  
-
 # [[THM - AoC 2023 - [Day 1] Chatbot, tell me, if you're really safe]]  
 
 
@@ -85,5 +84,3 @@ ___
 | --------- | ---- |
 
 
-Created Date: December 1st 2023 (12:48 pm)  
-Last Modified Date: <%+tp.file.last_modified_date("MMMM Do YYYY (hh:ss a)")%>

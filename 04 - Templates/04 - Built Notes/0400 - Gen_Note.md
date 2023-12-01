@@ -135,7 +135,7 @@ async function buildNote(title,struct) {
 // element which will prefix all content files and permit dataview quering
 // Returns: String
 async function setMetadata(inTag) {
-	var metadata = "---\ncreation date: " + tp.file.creation_date("MMMM Do YYYY (hh:ss a)") + "\nlast modified date: " + tp.file.last_modified_date("MMMM Do YYYY (hh:ss a)") + "\naliases: []\ntags: " + inTag;
+	var metadata = "---\ncreation date: " + tp.file.creation_date("MMMM Do YYYY (hh:ss a)") + "\nlast modified date: " + tp.file.last_modified_date("MMMM Do YYYY (hh:ss a)") + "\naliases: []\ntags: " + inTag + "\n---\n ";
 
 	return metadata;
 }
