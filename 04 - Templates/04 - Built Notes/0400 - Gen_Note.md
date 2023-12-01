@@ -106,7 +106,7 @@ async function buildNote(title,struct) {
 	var pageTitle = "# [[" + title + "]]  \n";
 	var body = await tp.file.include(struct) + "\n"
 	var resources = await tp.file.include("[[0402 - Struct_Gen_Resources]]") + "\n";
-	var timestamps = await setTimestamps();
+//	var timestamps = await setTimestamps();
 	
 	console.log("Is the passed struct a complete template?");
 	//TODO: 
@@ -117,11 +117,11 @@ async function buildNote(title,struct) {
 		if (await ShouldLink(struct)) {
 			console.log("linking it");
 			// include header if the note should be linked
-			note = metadata + header + pageTitle + body + resources + timestamps
+			note = metadata + header + pageTitle + body + resources
 		} else {
 			console.log("not linking it for reasons");
 			// do not include header 
-			note = metadata + pageTitle + body + resources + timestamps
+			note = metadata + pageTitle + body + resources
 		}
 	} else {
 		console.log("the struct is a template");
