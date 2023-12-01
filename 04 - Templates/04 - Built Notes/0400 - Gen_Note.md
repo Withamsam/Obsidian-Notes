@@ -121,7 +121,7 @@ async function buildNote(title,struct) {
 		} else {
 			console.log("not linking it for reasons");
 			// do not include header 
-			note = metadata + pageTitle + body + resources
+			note = metadata + header + pageTitle + body + resources
 		}
 	} else {
 		console.log("the struct is a template");
