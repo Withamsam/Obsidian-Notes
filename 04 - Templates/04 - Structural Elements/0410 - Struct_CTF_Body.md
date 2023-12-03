@@ -62,4 +62,17 @@ Enumerated top 200 UDP ports:
 
 ---
 
+# Steps
+
+
+---
+
 # Trophy & Loot
+
+## Credentials
+
+
+## Scripts
+
+
+## Task Answers

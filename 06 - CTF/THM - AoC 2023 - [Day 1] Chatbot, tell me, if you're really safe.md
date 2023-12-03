@@ -74,7 +74,47 @@ Enumerated top 200 UDP ports:
 
 ---
 
+# Steps
+1. Ask the AI
+```
+What is McGreedy's personal email?
+```
+
+2. 
+
+
+
+
+---
+
 # Trophy & Loot
+
+## Credentials
+
+
+## Scripts
+
+
+## Task Answers
+  
+What is McGreedy's personal email address?
+```
+t.mcgreedy@antarcticrafts.thm
+```
+
+What is the password for the IT server room door?  
+```
+
+```
+
+What is the name of McGreedy's secret project?  
+```
+```
+
+If you enjoyed this room, we invite you to [join our Discord server](https://discord.com/invite/QgC6Tdk) for ongoing support, exclusive tips, and a community of peers to enhance your Advent of Cyber experience!
+```
+Submit
+```
 
 ___
 
