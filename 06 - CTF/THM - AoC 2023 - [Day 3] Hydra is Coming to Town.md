@@ -75,6 +75,9 @@ Enumerated top 200 UDP ports:
 
 # Steps
 
+1. Got to site it gives `http://10.10.60.140:8000/pin.php`
+2. Here we see a pin panel with the following character set
+
 
 
 ---
@@ -89,7 +92,16 @@ Enumerated top 200 UDP ports:
 
 ## Task Answers
 
+  
+Using `crunch` and `hydra`, find the PIN code to access the control system and unlock the door. What is the flag?
+```
+THM{pin-code-brute-force}
+```
 
+If you have enjoyed this room please check out the [Password Attacks](https://tryhackme.com/room/passwordattacks) room.
+```
+Submit
+```
 
 ___
 
