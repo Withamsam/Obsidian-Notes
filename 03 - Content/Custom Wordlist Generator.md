@@ -22,11 +22,13 @@ Pre-installed on Kali
 
 ---
 ## Commands
-| Switch |           Description            |        Example        |
-|:------:|:--------------------------------:|:---------------------:|
-|  `-w`  |     Write the output to file     | `cewl -w <FILE_NAME>` |
-|  `-m`  | Minimum word length (default: 3) |      `cewl -m 5`      |
-|  `-d`  | Depth to spider to (default: 2)  |      `cewl -d 8`      |
+|      Switch      |                  Description                   |        Example        |
+|:----------------:|:----------------------------------------------:|:---------------------:|
+|       `-w`       |            Write the output to file            | `cewl -w <FILE_NAME>` |
+|       `-m`       |        Minimum word length (default: 3)        |      `cewl -m 5`      |
+|       `-d`       |        Depth to spider to (default: 2)         |      `cewl -d 8`      |
+| `--with-numbers` | Will include numbers that match the min length | `cewl --with-numbers` |
+| `--lowercase`                 |                                                |                       |
 
 **Basic Usage**
 ```bash
