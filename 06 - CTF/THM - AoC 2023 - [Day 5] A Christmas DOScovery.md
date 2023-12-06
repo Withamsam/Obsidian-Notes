@@ -83,10 +83,24 @@ cd \TOOLS\BACKUP
 ```
 
 3.  Print the contents of `README.txt`
-```ba
+```bash
+type README.TXT
+```
+- This will give us the *name of the program* / *how to restore a file*
+
+4. Now that we know how to restore a file lets do that using the MS-DOS editor
+```bash
+edit C:\AC2023.BAK
 ```
 
+5. We need to alter the first two characters from `XX` --> `AC`
+	- We get the `AC` from the read me file it tells us the first hex value should be `41 43` which is the hex value for `AC`
+6. Run the backup program to read `AC2023.BAK`
+```bash
+C:\TOOLS\BACKUP\BUMASTER.EXE C:\AC2023.BAK
+```
 
+7. There's the flag!!
 
 ---
 
@@ -130,7 +144,8 @@ ___
 
 ## Resources:
 
-| Hyperlink | Info |
-| --------- | ---- |
+| Hyperlink                                            | Info |
+| ---------------------------------------------------- | ---- |
+| [Link](https://tryhackme.com/room/adventofcyber2023) | Link to CTF     |
 
 
