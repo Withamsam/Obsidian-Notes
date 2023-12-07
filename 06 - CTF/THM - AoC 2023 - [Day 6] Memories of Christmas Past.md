@@ -88,6 +88,17 @@ Enumerated top 200 UDP ports:
 ```
 - This is the answer to the first question
 
+5. Now try and buy the start from the blue goblin below you
+6. Surprise he crafted this game to not be winnable so he gives you a "Rarer item"
+7. Lets beat him we already know how to modify the game using the name changer. If you buy an item from the shop you need to enter an `id`.
+8. You should see that whatever `id` you choose shoes in your inventory as its `id`
+9. Go back to the name changer and enter the following name you need the name to be at least `44 in length`. I suggest going a bit over that incase you miss count.
+```
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!e
+```
+- Make sure the last character you use is `e` which is the id of the star in the shop
+
+10. All done go use that on the tree and you have the final flag.
 
 ---
 
