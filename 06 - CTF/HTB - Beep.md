@@ -100,7 +100,29 @@ Enumerated top 200 UDP ports:
 ---
 
 # Enumeration
-## Port 
+## Port 80 & 443
+- Leads to a login page for `Elastix`
+- No lockout for this one and no indication for failed attempts
+![[Pasted image 20231230213400.png]]
+
+## Port 10000
+- Login page for `Webmin`
+- Has a lockout after `~4` attempts
+	- Tried clearing cookies / cache
+	- Lockout is time base around `~5 mins`
+![[Pasted image 20231230213213.png]]
+
+
+## SIP
+- Ran scan using `sipvisious`
+`svmap $RHOST`
+```
++-------------------+---------------------+
+| SIP Device        | User Agent          |
++===================+=====================+
+| 10.129.9.237:5060 | FPBX-2.8.1(1.8.7.0) |
++-------------------+---------------------+
+```
 
 
 ---
