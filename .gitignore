@@ -9,6 +9,7 @@
 
 # Exclude consultant specific files "personal"
 05*-*Personal/
+07*-*Studying/
 
 # Exclude Day Planner directory placed in vault root
 Day*Planners/*
