@@ -18,12 +18,12 @@ Utilizing advanced commands in a google search.
 
 
 ## Commands
-| Filter   | Example             | Description                                                            |
-| -------- | ------------------- | ---------------------------------------------------------------------- |
-| (-)site  | (-)site:example.com | returns or (-)excludes results only from the specified website address |
-| inurl    | inurl:admin         | returns results that have the specified word in the URL                |
-| filetype | filetype:pdf        | returns results which are a particular                                 |
-| intitle  | intitle:admin       | returns results that contain that specified word in the title          |
+| Filter | Description | Example |
+| ---- | ---- | ---- |
+| (-)site | returns or (-)excludes results only from the specified domain | (-)site:example.com |
+| inurl | returns results that have the specified word in the URL | inurl:admin |
+| filetype | returns results which are a particular | filetype:pdf |
+| intitle | returns results that contain that specified word in the title | intitle:admin |
 - `-site:www.doamin.com  site:*.domain.com` = Searching for subdomains
 
 ___
