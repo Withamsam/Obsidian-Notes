@@ -26,6 +26,12 @@ Comes preinstalled on Kali
 - Domain will revel who is hosting their DNS along with some personal information possibly
 - IP Address can be used for a reverse lookup
 
+| Switch |      Description       | Example |
+|:------:|:----------------------:|:-------:|
+|  `-h`  | Connect to server HOST | `whois google.com -h 192.168.1.1`        |
+
+
+
 
 ___
 
