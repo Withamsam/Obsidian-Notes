@@ -22,6 +22,7 @@ Comes preinstalled on Kali
 ## Commands
 **Basic**
 `whois <DOMAIN or IP ADDRESS>`
+- Domain will revel who is hosting their DNS along with some personal information possibl
 
 
 ___
