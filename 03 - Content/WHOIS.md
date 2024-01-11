@@ -28,7 +28,7 @@ Comes preinstalled on Kali
 
 | Switch |      Description       | Example |
 |:------:|:----------------------:|:-------:|
-|  `-h`  | Connect to server HOST | `whois google.com -h 192.168.1.1`        |
+|  `-h`  | Specify WHOIS Server to use | `whois google.com -h 192.168.1.1`        |
 
 
 
