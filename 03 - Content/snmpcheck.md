@@ -7,7 +7,7 @@ tags: #🧰
 
 Primary Categories: 
 Secondary Categories:  
-Links: [[SNMP]] - [[02 - Enumeration]]
+Links: [[SNMP]] - [[02 - Internal Enumeration]]
 Search Tag: #🧰  
 
 # [[snmpcheck]]  

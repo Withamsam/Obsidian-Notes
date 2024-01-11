@@ -9,4 +9,4 @@ Search Tag: #🗺
 [[02 - Weaponization]]
 [[02 - Authentication Bypass]]
 [[02 - Persistence]]
-[[02 - Enumeration]]
+[[02 - Internal Enumeration]]

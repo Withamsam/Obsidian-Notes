@@ -8,6 +8,10 @@ Search Tag: #🗺
 [[Active Scanning]]
 [[Specialized Search Engines]]
 
+
+# Methodology
+
+
 # Websites
 [[Robots.txt]]
 [[Sitemap.xml]]

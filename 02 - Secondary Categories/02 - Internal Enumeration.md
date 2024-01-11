@@ -1,7 +1,7 @@
 Primary Categories: [[01 - Red Team]]
 Search Tag: #🗺  
 
-# [[Enumeration]]
+# [[02 - Internal Enumeration]]
 ---
 
 [[Windows Enumeration]]

@@ -6,7 +6,7 @@ tags: #🧰
 ---
 
 Primary Categories: [[01 - Pentest]] - [[01 - Red Team]]
-Secondary Categories:  [[02 - Enumeration]]
+Secondary Categories:  [[02 - Internal Enumeration]]
 Links: [[WordPress]]
 Search Tag: #🧰  
 

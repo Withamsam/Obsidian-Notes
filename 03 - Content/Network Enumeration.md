@@ -6,7 +6,7 @@ tags: #📕
 ---
 
 Primary Categories: [[01 - Red Team]]
-Secondary Categories: [[02 - Enumeration]]
+Secondary Categories: [[02 - ]]
 Links: [[Windows]] - [[Linux]] - [[MacOS]]
 Search Tag: #📕  
 

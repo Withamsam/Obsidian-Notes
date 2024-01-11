@@ -7,7 +7,7 @@ tags: #🧰
 
 Primary Categories: [[01 - Pentest]] - [[01 - Red Team]]
 Secondary Categories:  [[02 - Reconnaissance]]
-Links: [[03 - Content/Python]] - [[Subdomains]] - [[Content Discovery]] - [[Websites]] - [[02 - Enumeration]] - [[OSINT]]
+Links: [[03 - Content/Python]] - [[Subdomains]] - [[Content Discovery]] - [[Websites]] - [[02 - Internal Enumeration]] - [[OSINT]]
 Search Tag: #🧰  
 
 # [[Sublist3r]]  
