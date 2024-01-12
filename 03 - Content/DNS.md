@@ -7,7 +7,7 @@ tags: #📕
 
 Primary Categories: { Add link(s) [[]] back to related PRIMARY categories }
 Secondary Categories:  { Add link(s) [[]] back to related SECONDARY categories }
-Links: [[dnsrecon]] - [[nslookup]] - [[dig]] - [[DNSDumpster]]
+Links: [[dnsrecon]] - [[nslookup]] - [[dig]] - [[DNSDumpster]] - [[host]]
 Search Tag: #📕  
 
 # [[DNS]]  

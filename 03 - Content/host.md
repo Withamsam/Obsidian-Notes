@@ -20,7 +20,11 @@ Used for quick DNS query.
 Pre-installed on Kali
 
 ## Commands
-`host <DOMAIN_NAME>`
+- Defaults to search **A Records**
+```
+host <>
+```
+
 ```bash
 └─$ host hbci.com  
 hbci.com has address 167.99.49.153
