@@ -12,7 +12,12 @@ Links:
 ___
 
 ## Description:  
-These are a collection of tools commonly found on systems that can be used for various tasks. This can be anything from sear
+These are a collection of tools commonly found on systems that can be used for various tasks.
+
+
+## Windows
+### Reverse DNS
+[[nslookup]]
 
 
 
