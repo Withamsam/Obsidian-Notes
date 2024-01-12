@@ -22,9 +22,9 @@ Pre-installed on Kali
 ## Commands
 - Defaults to search **A Records**
 ```
-host <>
+host <TARGET_DOMAIN>
 ```
-
+Results:
 ```bash
 └─$ host hbci.com  
 hbci.com has address 167.99.49.153
@@ -33,6 +33,15 @@ hbci.com mail is handled by 40 hbci.com.mx4.hbci.rcimx.net.
 hbci.com mail is handled by 10 hbci.com.mx1.hbci.rcimx.net.
 hbci.com mail is handled by 20 hbci.com.mx2.hbci.rcimx.net.
 ```
+
+
+| Switch | Description | Example |
+|:------:|:-----------:|:-------:|
+|  `-t`  | Specify Record Types            | `host -t mx hbci.com`        |
+
+
+
+
 
 
 ___
