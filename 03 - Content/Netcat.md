@@ -31,6 +31,19 @@ Versatile tool that can allow us to use both TCP and UDP to either connect to an
 	- `host: netcat`
 4. After entering this we should get our banner back from the site giving us more information about it
 
+### Port Scanning
+#### TCP
+```bash
+nc -nvv -z -w 1 192.168.1.1 1-65535 2>&1 | grep -v 'Connection refused'
+```
+
+#### UDP
+```bash
+nc -nvv -z -w 1 -u 192.168.1.1 1-65535 2>&1 | grep -v 'Connection refused'
+```
+
+
+
 ___
 
 ## Resources:
