@@ -11,7 +11,7 @@ Links: [[stdout]]
 # [[stderr]]  
 **Standard error**(stderr) is an output stream that is usually used by programs to output error messages or diagnostics.
 
-This is represented by `2>` if we want to redirect the str
+This is represented by `2>` if we want to redirect the stream to another file or stream shown below.
 
 - A few programs use this as the default out though such as:
 	- [[Netcat]]
@@ -20,11 +20,18 @@ This is represented by `2>` if we want to redirect the str
 ## Output Redirection
 ### stderr -> file
 ```bash
-grep da * 2>
+grep da * 2> errors.txt
 ```
 
+### stderr -> stdout
+```bash
+grep * 2>&1
+```
 
-
+### stderr -> null
+```bash
+grep da * 2>/dev/null
+```
 
 ___
 
