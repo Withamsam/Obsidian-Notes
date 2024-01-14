@@ -1,8 +1,9 @@
 ---
 creation date: December 12th 2022
 last modified date: December 12th 2022
-aliases: []
-tags: #🧰
+aliases: 
+tags:
+  - 🧰
 ---
 
 Primary Categories: [[01 - Pentest]] - [[01 - Red Team]]
@@ -14,10 +15,12 @@ Search Tag: #🧰
 ___
 
 ## Description:
+Robust port scanner that is capable of crafting packets to send to a target to do anything from gather port statuses to gathering system info.
 
+Often times we need to use `sudo` in order to run our scans. This is because most of it's scans need access to **Raw Sockets** to manipulate TCP and UDP packets. Without this we still have some options but its limited as it needs to use the **Berkley socket API**.
 
 ## Installation
-
+Pre-install on Kali
 
 ## Commands
 ### Ping Scans
