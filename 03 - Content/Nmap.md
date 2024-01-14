@@ -60,7 +60,7 @@ Pre-install on Kali
 ### TCP SYN Scan
 - `sS`
 - Default choice by nmap if we **do have sudo**.
-- After getting the SYN,ACK back from the port sends a RST and never finishes the handshake.
+- After getting the SYN-ACK back from the port sends a RST and never finishes the handshake.
 - Less likely to be logged as the full connection is never made.
 
 ### UDP Scan
