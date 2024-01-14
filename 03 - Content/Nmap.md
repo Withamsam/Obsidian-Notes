@@ -112,6 +112,10 @@ Pre-install on Kali
 - Useful for doing things like [[Network Sweeping]]
 
 ### Custom Scan
+```bash
+cd /usr/share/nmap/script/
+```
+
 - `--script-args http.useragent="CUSTOM_AGENT"`
 	- Used to avoid detection by changing the useragent that shows in our requests.
 	- Nmap defaults to: **User-Agent** (which is commonly searched for by Blue Teams)
