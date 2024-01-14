@@ -8,7 +8,7 @@ tags:
 
 Primary Categories: [[01 - Pentest]] - [[01 - Red Team]]
 Secondary Categories:  [[02 - Reconnaissance]]
-Links: [[Ports]] - [[Active Scanning]] - [[Host Discovery]]
+Links: [[Ports]] - [[Active Scanning]] - [[Host Discovery]] - [[Network Sweeping]]
 
 # [[Nmap]]  
 ___
@@ -58,29 +58,29 @@ Pre-install on Kali
 - Runs a full 3-way handshake followed by RST,ACK. This resets the connection type of the port and moves onto the next.
 
 ### TCP SYN Scan
-- `sS`
+- `-sS`
 - Default choice by nmap if we **do have sudo**.
 - After getting the SYN-ACK back from the port sends a RST and never finishes the handshake.
-- Less likely to be logged as the full connection is never made.
+- Less likely to be logged as the full connection is never made. Depends on if they have their Firewall to log incomplete connections which most do now adays.
 
 ### UDP Scan
-- `sU`
+- `-sU`
 - Since this is a connectionless protocol this scan relies on ICMP port unreachable error (type 3, code 3). This reply will only come through if the packet we sent cant reach it meaning we only see it for ports that aren't open.
 
 ### Null Scan
-- `sN`
+- `-sN`
 - Doesn't set a flag leaves all 6 flag bits set to zero.
 - Since the scan sends a TCP packet with no flag then it the port will not respond if the port is open or filtered and if the port is closed then we will get RST,ACK.
 - Useful if we think a firewall is filtering our SYN packets.
 
 ### FIN Scan
-- `sF`
+- `-sF`
 - Sets the flag during initial TCP connection to FIN.
 - This scan looks for the lack of response to determine if a port is open/filtered. If a port is closed we will get a RST/ACK.
 - Useful if we think a firewall is filtering our SYN packets.
 
 ### Xmas Scan
-- `sX`
+- `-sX`
 - Sets the flag during initial TCP connection to FIN, PSH, URG at the same time.
 - This scan looks for the lack of response to determine if a port is open/filtered. If a port is closed we will get a RST/ACK
 - Useful if we think a firewall is filtering our SYN packets.
@@ -91,7 +91,7 @@ Pre-install on Kali
 - This scan gets back RST regardless of if the port is open/closed.
 
 ### TCP ACK Scan
-- `sA`
+- `-sA`
 - Sets the flag during initial TCP connection to ACK
 - This scan gets back RST regardless of if the port is open/closed
 - Suitable to discover firewall rule set and it inspects which ports actually give a response to the ACK if they are behind a firewall.
@@ -105,6 +105,10 @@ Pre-install on Kali
 - Works the same as **TCP ACK Scan** except it examines the **TCP Window** field of the RST reply
 - If the target system can be Linux/Windows/MacOS gives us a reply with a port even if it says that port is closed these replies act different these closed ports actually are not being blocked by the firewall
 ![[Pasted image 20230108144123.png]]
+
+### Ping Scan
+- `-sn`
+- As the name sounds this uses a p
 
 ### Custom Scan
 - `--script-args http.useragent="CUSTOM_AGENT"`
