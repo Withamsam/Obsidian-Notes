@@ -23,7 +23,6 @@ Pre-install on Kali
 
 ## Commands
 ### Ping Scans
-
 |       Scan Type        |               Example Command               | Sudo Required? |
 |:----------------------:|:-------------------------------------------:| :--------------: |
 |        ARP Scan        |      `sudo nmap -PR -sn MACHINE_IP/24`      |                |
@@ -36,7 +35,6 @@ Pre-install on Kali
 
 
 ### Port Scans
-
 |    Scan Type     |      Flag       |                  Example Command                  | Sudo Required? |
 |:----------------:|:---------------:|:-------------------------------------------------:|:--------------:|
 | TCP Connect Scan |     **-sT**     |              `nmap -sT 10.10.10.10`               |       No       |
@@ -108,7 +106,8 @@ Pre-install on Kali
 
 ### Ping Scan
 - `-sn`
-- As the name sounds this uses a p
+- As the name sounds this uses a ping to determine if a host is up.
+- Useful for doing things like [[Network Sweeping]]
 
 ### Custom Scan
 - `--script-args http.useragent="CUSTOM_AGENT"`

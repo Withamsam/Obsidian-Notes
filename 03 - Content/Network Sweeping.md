@@ -12,7 +12,11 @@ Links:
 ___
 
 ## Description:  
+This is the act of determining if a host is active. Can be done with multiple tools this is a collection of those for convivence.
 
+
+## [[Nmap]]
+![[Nmap#Ping Scans]]
 
 
 
