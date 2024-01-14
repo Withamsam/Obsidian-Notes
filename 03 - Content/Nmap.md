@@ -24,13 +24,14 @@ Pre-install on Kali
 ## Commands
 ### Ping Scans
 |       Scan Type        |               Example Command               | Sudo Required? |
-|:----------------------:|:-------------------------------------------:| :--------------: |
-|        ARP Scan        |      `sudo nmap -PR -sn MACHINE_IP/24`      |                |
+|:----------------------:|:-------------------------------------------:|:--------------:|
+|        ARP Scan        |        `sudo nmap -sn MACHINE_IP/24`        |                |
+|    Common Services     | `sudo nmap -p 80 192.168.1.1-253 -oG web-sweep.txt`                                            |                |
 |     ICMP Echo Scan     |      `sudo nmap -PE -sn MACHINE_IP/24`      |                |
 |  ICMP Timestamp Scan   |      `sudo nmap -PP -sn MACHINE_IP/24`      |                |
 | ICMP Address Mask Scan |      `sudo nmap -PM -sn MACHINE_IP/24`      |                |
-|   TCP SYN Ping Scan    | `sudo nmap -PS22,80,443 -sn MACHINE_IP/30`  |        No        |
-|   TCP ACK Ping Scan    | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`  |     Yes           |
+|   TCP SYN Ping Scan    | `sudo nmap -PS22,80,443 -sn MACHINE_IP/30`  |       No       |
+|   TCP ACK Ping Scan    | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`  |      Yes       |
 |     UDP Ping Scan      | `sudo nmap -PU53,161,162 -sn MACHINE_IP/30` |                |
 
 
@@ -106,6 +107,7 @@ Pre-install on Kali
 
 ### Ping Scan
 - `-sn`
+- Defaults to **ARP Scan**
 - As the name sounds this uses a ping to determine if a host is up.
 - Useful for doing things like [[Network Sweeping]]
 
