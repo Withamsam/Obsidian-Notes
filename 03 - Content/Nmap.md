@@ -9,7 +9,6 @@ tags:
 Primary Categories: [[01 - Pentest]] - [[01 - Red Team]]
 Secondary Categories:  [[02 - Reconnaissance]]
 Links: [[Ports]] - [[Active Scanning]] - [[Host Discovery]]
-Search Tag: #🧰  
 
 # [[Nmap]]  
 ___
