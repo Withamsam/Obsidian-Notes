@@ -18,7 +18,7 @@ Collection of useful one line commands that can be run in **Powershell CLI**.
 
 ### Scan 1024 port on Domain Controller
 ```PowerShell
-1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.50.151", $_)) "TCP port $_ is open"} 2>$null
+1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.215.151", $_)) "TCP port $_ is open"} 2>$null
 ```
 - Starts by using a for-loop to assign the incremental integer to `$_`
 - Then creates a TCPClient object to preform a TCP connection
