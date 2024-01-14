@@ -19,6 +19,9 @@ These are a collection of tools commonly found on systems that can be used for v
 ### Reverse DNS
 [[nslookup]]
 
+### Port Scan
+[[Test-NetConnection]]
+
 
 
 ___
