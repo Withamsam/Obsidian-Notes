@@ -115,6 +115,11 @@ Pre-install on Kali
 ```bash
 cd /usr/share/nmap/script/
 ```
+```bash
+sudo nmap -p80 192.168.1.1 --script http-title
+```
+
+
 
 - `--script-args http.useragent="CUSTOM_AGENT"`
 	- Used to avoid detection by changing the useragent that shows in our requests.
