@@ -15,7 +15,6 @@ ___
 These are commands that can be executed using one line using a bit of **Bash** in the terminal to automate a few things.
 
 ## Commands
-
 ### DNS / IP Locator
 - Uses a wordlist to search subdomains
 	- Use **Seclist** wordlists for hostnames
@@ -29,6 +28,13 @@ for ip in $(cat wordlist.txt); do host $ip.example.com; done | grep -v "not foun
 for ip in $(seq 200 254); do host xxx.xxx.xxx.$ip; done | grep -v "not found"
 ```
 
+
+### SMB
+#### Enum4Linux
+- Will search a range of IP's that we set in `IPs.txt`
+```bash
+for IP in $(cat IPs.txt); do enum4linux -a $IP > enum4linux_${IP}.txt; done
+```
 
 
 ___
