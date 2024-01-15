@@ -15,6 +15,14 @@ ___
 Server Message Block (SMB)
 
 
+## Enumeration Tools
+### Linux
+[[SMBClient]]
+[[Nmap#SMB]]
+
+
+### Windows
+[[net view]]
 
 ___
 

@@ -46,7 +46,15 @@ Pre-install on Kali
 |    Xmas Scan     |     **-sX**     |            `sudo nmap -sX 10.10.10.10`            |      Yes       |
 |   TCP ACK Scan   |     **-sA**     |            `sudo nmap -sA 10.10.10.10`            |      Yes       |
 |   Window Scan    |     **-sW**     |            `sudo nmap -sW 10.10.10.10`            |      Yes       |
-|   Custom Scan    | **--scanflags** | `sudo nmap --scanflags <CUSTOM_FLAG> 10.10.10.10` |      Yes       | 
+|   Custom Scan    | **--scanflags** | `sudo nmap --scanflags <CUSTOM_FLAG> 10.10.10.10` |      Yes       |
+|     Scripts      | **--script**                | `nmap --script=http-title 10.10.10.10`                                                  | No               |
+
+
+### SMB
+- This will try all SMB scripts that we have and give us the results
+```bash
+nmap -v -p139,445 --script=smb* 10.10.10.10
+```
 
 
 
@@ -118,7 +126,6 @@ cd /usr/share/nmap/script/
 ```bash
 sudo nmap -p80 192.168.1.1 --script http-title
 ```
-
 
 
 - `--script-args http.useragent="CUSTOM_AGENT"`
