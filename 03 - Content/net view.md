@@ -23,7 +23,8 @@ ___
 net view \\dc01 /all
 ```
 - This will list all shares running on **dc01**
-- The 
+- The `/all` with show admin shares ending with **$**
+
 
 
 ___
