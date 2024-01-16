@@ -22,7 +22,11 @@ Used to connect to virtual terminal in order to login and access its terminal, s
 Note all of this is sent in **Clear Text**.
 
 ## Installation
-
+### Windows
+```Powershell
+dism /online /Enable-Feature /FeatureName:TelnetClient
+```
+- Enables Microsofts version of 
 
 ## Commands
 - Basic connection:

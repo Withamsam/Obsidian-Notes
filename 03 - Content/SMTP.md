@@ -21,6 +21,12 @@ Simple Mail Transport Protocol (SMTP)
 
 
 ## Enumeration
+### Tools
+- Windows
+	- [[Test-NetConnection]]
+	- [[Telnet]]
+- Linux
+
 ### Manual
 1. First we need to connect to it.
 ```bash
@@ -33,7 +39,7 @@ nc -nv 10.10.10.10 25
 	- `EXPN` = Checks with the server for a membership of a mailing list
 
 
-### Python Script To **VRFY** An Accounts
+### Python Script To **VRFY** An Account
 1. We need the script to open a **TCP Socket**
 2. Then connect to the **SMTP Server**
 3. Lastly utilize **VRFY** command to check if a given username
@@ -44,8 +50,10 @@ nc -nv 10.10.10.10 25
 import socket
 import sys
 
+users_list = []
+
 if len(sys.argv) != 3:
-        print("Usage: vrfy.py <username> <target_ip>")
+        print("Usage: vrfy.py <username_list> <target_ip>")
         sys.exit(0)
 
 # Create a Socket
@@ -60,12 +68,18 @@ banner = s.recv(1024)
 
 print(banner)
 
-# VRFY a user
-user = (sys.argv[1]).encode()
-s.send(b'VRFY ' + user + b'\r\n')
-result = s.recv(1024)
+# Opens file and writes them to a list
+with open(f'{sys.argv[1]}', 'r') as file:
+	for line in file:
+		users_list.append(line.strip())
 
-print(result)
+# VRFY user's
+for user in users_list
+	user_encoded = (user).encode()
+	s.send(b'VRFY ' + users_encoded + b'\r\n')
+	result = s.recv(1024)
+	
+	print(result)
 
 # Close the socket
 s.close()
