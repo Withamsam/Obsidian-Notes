@@ -26,16 +26,21 @@ Note all of this is sent in **Clear Text**.
 ```Powershell
 dism /online /Enable-Feature /FeatureName:TelnetClient
 ```
-- Enables Microsofts version of 
+- Enables Microsoft's version of **Telnet**
+- **Requires Admin Privileges**
+If we need to install as a low-level user we will need to grab its binary from another machine and transfer it. This file is located at **C:\windows\system32\telnet.exe**.
 
 ## Commands
-- Basic connection:
-	1. `telnet <TARGET_IP> <PORT>`
-	2. Enter username and password in the following two prompts
-- Basic Header Grab
-	1. Telnet in with basic connection
-	2. `GET / HTTP/1.1`
-	3. `Host: telnet`
+### Basic connection:
+1. `telnet <TARGET_IP> <PORT>`
+2. Enter username and password in the following two prompts
+### Basic Header Grab
+1. Telnet in with basic connection
+2. `GET / HTTP/1.1`
+3. `Host: telnet`
+
+
+
 
 ___
 

@@ -24,7 +24,9 @@ Simple Mail Transport Protocol (SMTP)
 ### Tools
 - Windows
 	- [[Test-NetConnection]]
+		- Checking Port Status
 	- [[Telnet]]
+		- Connecting to server
 - Linux
 
 ### Manual
