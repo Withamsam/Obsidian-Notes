@@ -39,6 +39,8 @@ nc -nv 10.10.10.10 25
 2. Interesting commands we can try once connected.
 	- `VRFY <USERNAME>` = We can request the server to verify if this email address is valid
 	- `EXPN` = Checks with the server for a membership of a mailing list
+- **Results:**
+![[Pasted image 20240115220926.png]]
 
 
 ### Python Script To **VRFY** An Account
