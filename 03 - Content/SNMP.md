@@ -37,6 +37,7 @@ Offer no encryption for their traffic!!
 - The SNMP Management Information Base (MIB) is a database containing information that is usually related to network management.
 - This is built like a tree in which the branches represent a different organization or network function. All of the leaves on the tree correspond to specific variable values. These leaves can be enumerated by an external user. 
 
+### Table
 | MIB Values for                       | Windows                 |
 | ---------------------- | ---------------- |
 | 1.3.6.1.2.1.25.1.6.0   | System Processes |
