@@ -24,9 +24,17 @@ onesixtyone [options] <host> <community>
 ```
 
 
-### Basic community string
+### Basic community string search
 ```bash
 echo public > community && echo private >> community && echo manager >> community
+```
+
+```bash
+for ip in $(seq 1 254); do echo 10.10.10.$ip; done > ips
+```
+
+```bash
+onesixtyone -c community -i ips
 ```
 
 
