@@ -17,7 +17,8 @@ ___
 Used to collect information about various devices anything from servers with faulty disks to a printer low on ink. Thus it could contain a plethora of information if we can access it.
 
 
-##
+## Vulnerabilities
+### SNMPv(1,2)
 
 
 
