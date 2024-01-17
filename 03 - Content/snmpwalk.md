@@ -13,7 +13,7 @@ ___
 
 ## Description:
 Utilized to retrieve a subtree of management values using **SNMP GETNEXT requests**.
-snmpwalk 
+
 ## Installation
 
 
