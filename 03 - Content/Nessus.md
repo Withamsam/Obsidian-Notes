@@ -21,9 +21,29 @@ Tenable recommends 4 CPU cores and 8GB of RAM
 
 1. Manually [Download](https://www.tenable.com/downloads/nessus) **.deb** file
 2. Verify the checksum value and then install it with `apt install`
-3. 
 
 ## Commands
+
+### Starting Nessus
+- We do so with **systemctl**
+- It will just show nothing if it starts correctly
+```bash
+sudo systemctl start nessusd.service
+```
+
+
+### Connecting to Nessus
+```
+https://127.0.0.1:8834
+```
+
+
+
+
+
+
+
+
 
 
 
