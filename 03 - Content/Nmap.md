@@ -120,14 +120,6 @@ nmap -v -p139,445 --script=smb* 10.10.10.10
 - Useful for doing things like [[Network Sweeping]]
 
 ### Custom Scan
-```bash
-cd /usr/share/nmap/script/
-```
-```bash
-sudo nmap -p80 192.168.1.1 --script http-title
-```
-
-
 - `--script-args http.useragent="CUSTOM_AGENT"`
 	- Used to avoid detection by changing the useragent that shows in our requests.
 	- Nmap defaults to: **User-Agent** (which is commonly searched for by Blue Teams)
@@ -186,6 +178,32 @@ sudo nmap -p80 192.168.1.1 --script http-title
 	- **0-9** = These are the levels we can choose from 0 being least intense and 9 being most.
 	- The level that nmap uses normally is **7**.
 	- `nmap -sV --version-intensity 9 10.10.10.10`
+
+
+
+## Scripts NSE
+### File Location
+```bash
+cd /usr/share/nmap/script/
+```
+
+- 
+
+
+### HTTP Title Grab
+```bash
+sudo nmap -p80 --script http-title 10.10.10.10
+```
+
+### Vulnerability Scan
+```bash
+sudo nmap -sV --script "vuln" 10.10.10.10
+```
+
+
+
+
+
 
 
 ___
