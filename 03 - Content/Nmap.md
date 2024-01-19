@@ -187,9 +187,20 @@ nmap -v -p139,445 --script=smb* 10.10.10.10
 cd /usr/share/nmap/script/
 ```
 
-- 
+- Database for all built-in NSE
+- Change `vuln` to whatever category you want to filter by
+```bash
+cat /usr/share/nmap/script/script.db  | grep "\"vuln\""
+```
 
-
+### Adding New NSE Scripts
+- Simply find the script you want to add online and download it
+- Save this file to the above scripts folder with the name ending with `.nse`
+- Once done we need to update the database this can be done with the following:
+```bash
+sudo nmap --script-updatedb
+```
+- Now you can call the script like any other from nmap
 ### HTTP Title Grab
 ```bash
 sudo nmap -p80 --script http-title 10.10.10.10
